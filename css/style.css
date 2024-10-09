@@ -1,4 +1,42 @@
 /* ini css*/
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    align-items: center
+}
+h1 {
+    text-align-last: center;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+}
+h2{
+    text-align-last: center;
+    flex-wrap: wrap;
+    margin-bottom: -16px;
+}
+
+textarea{
+    height: 40px;
+    width: 630px;
+    gap: 20px;
+}
+p {
+    text-align: center;
+    flex-wrap: wrap;
+}
+
 .suhu-s {
         font-size: 30px;
         font-family: math;

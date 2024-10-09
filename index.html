@@ -16,28 +16,28 @@
          <section>
             <!--instruksi-->
             <article>
-                <p>masukan suhu derajat Celcius ( &deg;C) ke kotak dibawah, lalu klik tombol konversi untuk mendapatkan hasil konversi  dalam bentuk Fahrenheit ( &deg;F)</p>
+                <p>masukan suhu derajat Celcius ( &deg;C) ke kotak dibawah, lalu klik tombol konversi untuk mendapatkan hasil konversi  dalam bentuk Fahrenheit ( &deg;F).</p>
             </article>
 
             <!--input nilai-->
-            <form action="">
+            <form action="" class="form">
                 <div>
-                    <label for="input-suhu">Celcius ( &deg;C)</label>
+                    <label for="input-suhu">Celcius ( &deg;C) :</label>
                 </div>
 
                 <textarea name="" id="input-suhu"></textarea>
                 
-                <div>
-                <button>konversi</button>
-                <button>reset</button>
-                <button>reverse</button>
+                <div class="container">
+                <button class="buttonkonversi">konversi</button>
+                <button class="buttonreset">reset</button>
+                <button class="buttonreverse">reverse</button>
                 </div>
             </form>
 
             <!--hasil input-->
-            <div>
+            <div class="boxfahrenheit">
                <div>
-                <label for="hasil-suhu">Fahrenheit ( &deg;F)</label>
+                <label for="hasil-suhu">Fahrenheit ( &deg;F) :</label>
                </div>
 
              <textarea name="" id="hasil-suhu"></textarea>
@@ -49,7 +49,7 @@
                  <label for="how-to-suhu">Cara kalkulasi:</label>
                 </div>
  
-              <textarea name="" id="how-to-suhu"></textarea>
+              <textarea name="" id="how-to-suhu" class="box:"></textarea>
              </div>
          </section>
 
@@ -60,8 +60,8 @@
             </header>
 
             <article> 
-                <p> suhu <span class="suhu-s">s</span> dalam derajar Fahrenheit (&deg;F)....</p>
-                <p> <span class="suhu-s">s</span> <sub>(&deg;F)</sub> = ( <span class="suhu-s">s</span> (&deg;c)</p>
+                <p> suhu <span class="suhu-s">s</span> dalam derajar Fahrenheit (&deg;F) sama dengan suhu <span class="suhu-s">s</span> dalam derajat Celsius (&deg;C) kali</p>
+                <p> <span class="suhu-s">s</span> <sub>(&deg;F)</sub> = ( <span class="suhu-s">s</span> (&deg;c) <sup>X 9/5)</sup> + 32</p>
             </article>
           </section>       
     </main>
