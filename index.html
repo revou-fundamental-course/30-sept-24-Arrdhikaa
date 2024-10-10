@@ -7,65 +7,67 @@
     <link rel="stylesheet" href="css\style.css">
 </head>
 <body>
+    
     <header>
-        <h1> kalkulator konversi suhu</h1>
+        <h1 > kalkulator konversi suhu</h1>
     </header>
     
     <main>
         <!-- form content-->
-         <section>
+         <section class="content">
             <!--instruksi-->
             <article>
-                <p>masukan suhu derajat Celcius ( &deg;C) ke kotak dibawah, lalu klik tombol konversi untuk mendapatkan hasil konversi  dalam bentuk Fahrenheit ( &deg;F).</p>
+                <p style="margin-bottom: 5px">masukan suhu derajat Celcius (&deg;C) ke kotak dibawah</p>
+                <P>lalu klik tombol konversi untuk mendapatkan hasil konversi  dalam bentuk Fahrenheit (&deg;F).</p>
             </article>
 
             <!--input nilai-->
             <form action="" class="form">
                 <div>
-                    <label for="input-suhu">Celcius ( &deg;C) :</label>
+                    <label for="input-suhu">Celcius (&deg;C) :</label>
                 </div>
 
-                <textarea name="" id="input-suhu"></textarea>
-                
-                <div class="container">
-                <button class="buttonkonversi">konversi</button>
-                <button class="buttonreset">reset</button>
-                <button class="buttonreverse">reverse</button>
-                </div>
+                <input type="number"  name="" id="input-suhu"></input>
             </form>
 
+            <div class="container">
+                <button type="button" onclick="validateform()" class="btn-submit">konversi</button>
+                <button type="button" onclick="reset()" class="btn-reset">reset</button>
+                <button type="button" class="btn-reverse">reverse</button>
+                </div>
+        
             <!--hasil input-->
             <div class="boxfahrenheit">
                <div>
-                <label for="hasil-suhu">Fahrenheit ( &deg;F) :</label>
+                <label for="hasil-suhu">Fahrenheit (&deg;F) :</label>
                </div>
 
-             <textarea name="" id="hasil-suhu"></textarea>
+             <textarea name="" id="hasil-suhu" readonly></textarea>
             </div>
 
             <!--cara kalkulasi-->
-            <div>
+            <div style="margin-bottom: 15px;">
                 <div>
                  <label for="how-to-suhu">Cara kalkulasi:</label>
                 </div>
  
-              <textarea name="" id="how-to-suhu" class="box:"></textarea>
+              <textarea name="" id="how-to-suhu" class="box:" readonly></textarea>
              </div>
          </section>
 
         <!-- info content-->
           <section> 
             <header> 
-                <h2>cara konversi dari Celcius( &deg;C) ke Fahrenheit( &deg;F)</h2>
+                <h2>cara konversi dari Celcius(&deg;C) ke Fahrenheit(&deg;F)</h2>
             </header>
 
             <article> 
-                <p> suhu <span class="suhu-s">s</span> dalam derajar Fahrenheit (&deg;F) sama dengan suhu <span class="suhu-s">s</span> dalam derajat Celsius (&deg;C) kali</p>
+                <p style="margin-top: 2px; margin-bottom: 2px;"> suhu <span class="suhu-s">s</span> dalam derajar Fahrenheit (&deg;F) sama dengan suhu <span class="suhu-s">s</span> dalam derajat Celsius (&deg;C) kali 9/5 + 32</p>
                 <p> <span class="suhu-s">s</span> <sub>(&deg;F)</sub> = ( <span class="suhu-s">s</span> (&deg;c) <sup>X 9/5)</sup> + 32</p>
             </article>
           </section>       
     </main>
-
     <footer> </footer>
+<script src="js\script.js"></script>
 </body>
 </html>
