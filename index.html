@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <div class="blob-outer-container">
+        <div class="blob-inner-container">
+            <div class="blob"></div>
+        </div>
+    </div>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -8,17 +14,14 @@
 </head>
 <body>
     
-    <header>
-        <h1 > kalkulator konversi suhu</h1>
-    </header>
-    
     <main>
         <!-- form content-->
          <section class="content">
             <!--instruksi-->
             <article>
-                <p style="margin-bottom: 5px">masukan suhu derajat Celcius (&deg;C) ke kotak dibawah</p>
-                <P>lalu klik tombol konversi untuk mendapatkan hasil konversi  dalam bentuk Fahrenheit (&deg;F).</p>
+                <h2>kalkulator konversi suhu</h2>
+                <p id="instruction" style="margin-bottom: 5px">masukan suhu derajat Celcius (&deg;C) ke kotak dibawah</p>
+                <P id="instruction">lalu klik tombol konversi untuk mendapatkan hasil konversi  dalam bentuk Fahrenheit (&deg;F).</p>
             </article>
 
             <!--input nilai-->
@@ -32,8 +35,8 @@
 
             <div class="container">
                 <button type="button" onclick="validateform()" class="btn-submit">konversi</button>
-                <button type="button" onclick="reset()" class="btn-reset">reset</button>
-                <button type="button" class="btn-reverse">reverse</button>
+                <button type="button" onclick="reset()"        class="btn-reset">reset</button>
+                <button type="button" onclick="reverse()"      class="btn-reverse">reverse</button>
                 </div>
         
             <!--hasil input-->
@@ -53,19 +56,7 @@
  
               <textarea name="" id="how-to-suhu" class="box:" readonly></textarea>
              </div>
-         </section>
-
-        <!-- info content-->
-          <section> 
-            <header> 
-                <h2>cara konversi dari Celcius(&deg;C) ke Fahrenheit(&deg;F)</h2>
-            </header>
-
-            <article> 
-                <p style="margin-top: 2px; margin-bottom: 2px;"> suhu <span class="suhu-s">s</span> dalam derajar Fahrenheit (&deg;F) sama dengan suhu <span class="suhu-s">s</span> dalam derajat Celsius (&deg;C) kali 9/5 + 32</p>
-                <p> <span class="suhu-s">s</span> <sub>(&deg;F)</sub> = ( <span class="suhu-s">s</span> (&deg;c) <sup>X 9/5)</sup> + 32</p>
-            </article>
-          </section>       
+         </section>    
     </main>
     <footer> </footer>
 <script src="js\script.js"></script>
